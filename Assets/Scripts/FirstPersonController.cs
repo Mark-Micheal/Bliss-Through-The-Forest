@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Credits for script goes to https://www.youtube.com/watch?v=lYJtTYveYg0
 public class FirstPersonController : MonoBehaviour
 {
     // References
@@ -145,9 +146,9 @@ public class FirstPersonController : MonoBehaviour
         if (moveInput.sqrMagnitude <= moveInputDeadZone) return;
 
         // Multiply the normalized direction by the speed
-        Vector2 movementDirection = moveInput.normalized * moveSpeed * Time.deltaTime;
+        Vector2 movementDirection = moveInput.normalized * moveSpeed*20 * Time.deltaTime;
         // Move relatively to the local transform's direction
-        characterController.Move(transform.right * movementDirection.x + transform.forward * movementDirection.y);
+        characterController.SimpleMove(transform.right * movementDirection.x + transform.forward * movementDirection.y);
     }
 
 }
