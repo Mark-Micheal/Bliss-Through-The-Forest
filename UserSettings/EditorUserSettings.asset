@@ -5,6 +5,36 @@ EditorUserSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 4
   m_ConfigSettings:
+    RecentlyUsedScenePath-0:
+      value: 22424703114646680e0b0227036c6c111b07142f1f2b233e2867083debf42d
+      flags: 0
+    RecentlyUsedScenePath-1:
+      value: 22424703114646680e0b0227036c72111f192b292926237e38271427fb
+      flags: 0
+    RecentlyUsedScenePath-2:
+      value: 22424703114646680e0b0227036c4b1505032b292926237e38271427fb
+      flags: 0
+    RecentlyUsedScenePath-3:
+      value: 224247031146467d021c183015304c5031160c2f130e343528663b3cf0f4263df1f476cee62e3a031f10ea394a2b0f36e613
+      flags: 0
+    RecentlyUsedScenePath-4:
+      value: 224247031146466f080018315f2647111b07142f133b2535232c5326ece92021
+      flags: 0
+    RecentlyUsedScenePath-5:
+      value: 224247031146466f0400150419315a5020312065082d2b3f633c133af6f9
+      flags: 0
+    RecentlyUsedScenePath-6:
+      value: 224247031146467a1f1a0531042a5c3d1314102b22212523620b0820eaad172ae3e122a9c2222b393711e6330a7e313ef1014638f50e040e0241d30f05ea02121dfa489554dd1115df00
+      flags: 0
+    RecentlyUsedScenePath-7:
+      value: 224247031146467a1f1a0531042a5c3d1314102b22212523620b0820eaad172ae3e122a9c2222b393711e6330a7e313ef1014638f50e040e0241c90b03ed111a1ffa489554dd1115df00
+      flags: 0
+    RecentlyUsedScenePath-8:
+      value: 224247031146467a1f1a0531042a5c3d1314102b22212523620b0820eaad172ae3e122a9c2222b393711e6330a7e313ef1014638f50e040e0241d4021dea030703c40cc01ef74f4c850c12c7d904
+      flags: 0
+    RecentlyUsedScenePath-9:
+      value: 224247031146467a1f1a0531042a5c3d1314102b22212523620b0820eaad172ae3e122a9c2222b393711e6330a7e313ef1014638f50e040e0241ce1a14fe1c0719fa489554dd1115df00
+      flags: 0
     UnityRemoteDevice:
       value: 225f4d46245b0d4902070862342649191512
       flags: 0
@@ -18,5 +48,7 @@ EditorUserSettings:
   m_SemanticMergeMode: 2
   m_VCShowFailedCheckout: 1
   m_VCOverwriteFailedCheckoutAssets: 1
-  m_VCOverlayIcons: 1
+  m_VCProjectOverlayIcons: 1
+  m_VCHierarchyOverlayIcons: 1
+  m_VCOtherOverlayIcons: 1
   m_VCAllowAsyncUpdate: 0
