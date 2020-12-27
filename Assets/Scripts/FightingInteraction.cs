@@ -15,6 +15,7 @@ public class FightingInteraction : MonoBehaviour
     public GameObject Player;
 
     public GameObject button;
+    public GameObject star;
     public bool FightingInteractionCompleted;
 
     // Start is called before the first frame update
@@ -24,6 +25,7 @@ public class FightingInteraction : MonoBehaviour
         animControllerA = kidA.GetComponent<AnimationController>();
         animControllerB = kidB.GetComponent<AnimationController>();
         button.SetActive(false);
+        star.SetActive(false);
     }
 
     // Update is called once per frame
@@ -38,6 +40,8 @@ public class FightingInteraction : MonoBehaviour
             animControllerA.follow = true;
             animControllerB.player = Player.transform;
             animControllerB.follow = true;
+
+            star.SetActive(false);
         }
         else
         {
