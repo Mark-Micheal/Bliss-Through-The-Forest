@@ -18,6 +18,8 @@ public class FightingInteraction : MonoBehaviour
     public GameObject star;
     public bool FightingInteractionCompleted;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +43,9 @@ public class FightingInteraction : MonoBehaviour
             animControllerB.player = Player.transform;
             animControllerB.follow = true;
 
-            star.SetActive(false);
+            star.SetActive(true);
+
+
         }
         else
         {
@@ -79,6 +83,17 @@ public class FightingInteraction : MonoBehaviour
 
     }
 
+    public bool IsFightingComplete()
+    {
+        if (FightingInteractionCompleted)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
