@@ -21,7 +21,7 @@ public class AnimationController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(name + " " + follow);
+        //Debug.Log(name + " " + follow);
         if (follow)
         {
             //agent.destination = player.position;

@@ -13,21 +13,23 @@ public class FightingInteraction : MonoBehaviour
     AnimationController animControllerB;
 
     public GameObject Player;
-    public bool FollowPlayer;
-    Quaternion playerRot;
 
-    public bool FightingChallengeCompleted;
+    public GameObject button;
+    public bool FightingInteractionCompleted;
+
     // Start is called before the first frame update
     void Start()
     {
+
         animControllerA = kidA.GetComponent<AnimationController>();
         animControllerB = kidB.GetComponent<AnimationController>();
+        button.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (FightingChallengeCompleted)
+        if (FightingInteractionCompleted)
         {
             // follow player
             animControllerA.StopFighting();
@@ -50,9 +52,9 @@ public class FightingInteraction : MonoBehaviour
                 animControllerB.StopFighting();
                 animControllerB.RotateTowards(Player.transform);
 
-                //kidA.transform.rotation = Quaternion.Slerp(kidA.transform.rotation, Quaternion.LookRotation(lookAtTarget), 5 * Time.deltaTime);
-                //LookAt();
-                //kidA.transform.rotation = Quaternion.Slerp(kidA.transform.rotation, Quaternion.LookRotation(lookAtTarget), 5 * Time.deltaTime);
+                // show button
+
+                button.SetActive(true);
 
             }
             else
@@ -63,12 +65,9 @@ public class FightingInteraction : MonoBehaviour
 
                 animControllerB.Fighting();
                 animControllerB.RotateTowards(kidA.transform);
-                //Debug.Log(transform.parent)
-                //Vector3 lookAtTarget = kidB.transform.position;
-                //Quaternion playerRot = Quaternion.LookRotation(lookAtTarget);
-                //Debug.Log(lookAtTarget);
-                //kidA.transform.rotation = Quaternion.Slerp(kidA.transform.rotation, Quaternion.LookRotation(lookAtTarget), 5 * Time.deltaTime);
-                //kidA.transform.LookAt(lookAtTarget);
+
+                // hide button
+                button.SetActive(false);
             }
 
         }
@@ -76,10 +75,6 @@ public class FightingInteraction : MonoBehaviour
 
     }
 
-    private void LookAt()
-    {
-        throw new NotImplementedException();
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -99,5 +94,11 @@ public class FightingInteraction : MonoBehaviour
             Debug.Log("Player Left");
             playerInZone = false;
         }
+    }
+
+    public void FightingInteractionButtonPressed()
+    {
+        button.SetActive(false);
+        FightingInteractionCompleted = true;
     }
 }
