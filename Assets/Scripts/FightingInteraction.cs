@@ -32,9 +32,9 @@ public class FightingInteraction : MonoBehaviour
             // follow player
             animControllerA.StopFighting();
             animControllerB.StopFighting();
-            animControllerA.Target = Player.transform;
+            animControllerA.player = Player.transform;
             animControllerA.follow = true;
-            animControllerB.Target = Player.transform;
+            animControllerB.player = Player.transform;
             animControllerB.follow = true;
         }
         else

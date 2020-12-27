@@ -7,15 +7,13 @@ public class AnimationController : MonoBehaviour
 {
     Animator kidanim;
     NavMeshAgent agent;
-    public Transform target;
     public bool follow;
+    public Transform player;
 
-    public Transform Target { get => target; set => target = value; }
 
     // Start is called before the first frame update
     void Start()
     {
-        Target = transform;
         kidanim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
     }
@@ -26,9 +24,8 @@ public class AnimationController : MonoBehaviour
         Debug.Log(name + " " + follow);
         if (follow)
         {
-
-            agent.destination = Target.position;
-            if (agent.remainingDistance < 1f)
+            //agent.destination = player.position;
+            if (Vector3.Distance(transform.position, player.position) <= 2f)
             {
                 StopWalking();
             }
@@ -54,7 +51,7 @@ public class AnimationController : MonoBehaviour
 
     public void Walking()
     {
-        agent.destination = Target.position;
+        agent.destination = player.position;
         kidanim.SetBool("Walk", true);
     }
 
