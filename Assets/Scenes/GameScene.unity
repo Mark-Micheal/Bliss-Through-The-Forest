@@ -769,8 +769,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 19.04133, y: 11.8605995, z: 5.678751}
-  m_Center: {x: -1.2567014, y: 5.430524, z: 2.339425}
+  m_Size: {x: 28.531487, y: 11.8605995, z: 5.678751}
+  m_Center: {x: -0.9649682, y: 5.430525, z: 2.339427}
 --- !u!1001 &319366490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2902,7 +2902,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 61867116464058784, guid: faebfc926bb134e4da088bcff78fec3f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61867116464058789, guid: faebfc926bb134e4da088bcff78fec3f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7062975
+      objectReference: {fileID: 0}
+    - target: {fileID: 61867116464058789, guid: faebfc926bb134e4da088bcff78fec3f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.645283
+      objectReference: {fileID: 0}
+    - target: {fileID: 61867116464058789, guid: faebfc926bb134e4da088bcff78fec3f, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61867116464058790, guid: faebfc926bb134e4da088bcff78fec3f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1384871521}
+    - target: {fileID: 61867116464058790, guid: faebfc926bb134e4da088bcff78fec3f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FightingInteractionButtonPressed
       objectReference: {fileID: 0}
     - target: {fileID: 61867116526164559, guid: faebfc926bb134e4da088bcff78fec3f, type: 3}
       propertyPath: m_Color.r
@@ -2968,6 +2988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 61867118096824368, guid: faebfc926bb134e4da088bcff78fec3f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 61867118169974953, guid: faebfc926bb134e4da088bcff78fec3f, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2975,6 +2999,10 @@ PrefabInstance:
     - target: {fileID: 61867118169974953, guid: faebfc926bb134e4da088bcff78fec3f, type: 3}
       propertyPath: m_Name
       value: Star 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61867118190833496, guid: faebfc926bb134e4da088bcff78fec3f, type: 3}
+      propertyPath: m_text
+      value: Stop Fighting
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: faebfc926bb134e4da088bcff78fec3f, type: 3}
@@ -3109,6 +3137,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1994782569665964946, guid: cb99f0052c057bb42807ace0ed253ac0, type: 3}
   m_PrefabInstance: {fileID: 513806825}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1384871521 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1994782569665964957, guid: cb99f0052c057bb42807ace0ed253ac0, type: 3}
+  m_PrefabInstance: {fileID: 513806825}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384871520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 476ef6311acedbd4bbf2e23cebae53c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1407725062
 PrefabInstance:
   m_ObjectHideFlags: 0

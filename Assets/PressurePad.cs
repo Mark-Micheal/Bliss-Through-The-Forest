@@ -5,8 +5,8 @@ using UnityEngine;
 public class PressurePad : MonoBehaviour
 {
     int charCount = 0;
-   /* public GameObject gate1;
-    public GameObject gate2;*/
+    public GameObject gate1;
+    public GameObject gate2;
     public GameObject Gate;
     public GameObject treeBlock;
     public GameObject fightingInteraction;
@@ -38,10 +38,10 @@ public class PressurePad : MonoBehaviour
         {
             if (ft.IsFightingComplete())
             {
-                /*                gate1.SetActive(false);
-                                gate2.SetActive(false);*/
-                Gate.SetActive(false);
-                //Gate.GetComponent<BoxCollider>().enabled = false;
+                gate1.SetActive(false);
+                gate2.SetActive(false);
+                //Gate.SetActive(false);
+                Gate.GetComponent<BoxCollider>().enabled = false;
                 treeBlock.SetActive(false);
             }
         }
