@@ -15,6 +15,7 @@ public class FightingInteraction : MonoBehaviour
     public GameObject Player;
 
     public GameObject button;
+    public GameObject skipButton;
     public GameObject star;
     public bool FightingInteractionCompleted;
 
@@ -27,6 +28,7 @@ public class FightingInteraction : MonoBehaviour
         animControllerA = kidA.GetComponent<AnimationController>();
         animControllerB = kidB.GetComponent<AnimationController>();
         button.SetActive(false);
+        skipButton.SetActive(false);
         star.SetActive(false);
     }
 
@@ -63,6 +65,7 @@ public class FightingInteraction : MonoBehaviour
                 // show button
 
                 button.SetActive(true);
+                skipButton.SetActive(true);
 
             }
             else
@@ -76,6 +79,7 @@ public class FightingInteraction : MonoBehaviour
 
                 // hide button
                 button.SetActive(false);
+                skipButton.SetActive(false);
             }
 
         }
@@ -118,6 +122,13 @@ public class FightingInteraction : MonoBehaviour
     public void FightingInteractionButtonPressed()
     {
         button.SetActive(false);
+        skipButton.SetActive(false);
         FightingInteractionCompleted = true;
+    }
+
+    public void FightingInteractionSkipButtonPressed()
+    {
+        playerInZone = false;
+
     }
 }
